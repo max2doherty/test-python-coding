@@ -5,7 +5,7 @@ validates the size attribute to ensure it is a non-negative integer."""
 
 class Square:
     """A class that defines a square by its size."""
-    
+
     def __init__(self, size=0):
         """Initialize the square with a given size.
 
