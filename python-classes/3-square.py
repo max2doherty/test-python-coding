@@ -6,16 +6,16 @@ getter and setter methods, and an area method."""
 class Square:
     """A class that defines a square by its size and can compute its area."""
 
-    def __init__ (self, size=0):
+    def __init__(self, size=0):
         """Initialize the square with a given size."""
-        
+
         self.size = size
 
-    @property 
+    @property
     def size(self):
         """Get the size of the square."""
         return self.__size
-        
+   
     @size.setter
     def size(self, value):
         """Set the size of the square with validation.
@@ -32,7 +32,7 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-        
+
     def area(self):
         """Calculate and return the area of the square.
 
