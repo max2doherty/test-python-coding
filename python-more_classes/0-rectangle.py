@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """This module defines a Rectangle class with width and height validation."""
 
+
 class Rectangle:
     """A class that defines a rectangle by its width and height."""
 
     def __init__(self, width=0, height=0):
         """Initialize the rectangle with optional width and height."""
-        self.width = width
+        self.__width = width
         self.height = height
 
     @property
